@@ -1,0 +1,38 @@
+{
+  "name": "t",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "copy": "npx ncp ./node_modules/@arcgis/core/assets ./public/assets",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@xizher/cesium": "^1.0.1",
+    "@xizher/esri": "^1.0.0",
+    "@xizher/fetch-helper": "^1.0.4",
+    "@xizher/js-ext": "^1.0.0",
+    "@xizher/js-utils": "^1.0.0",
+    "@xizher/ol": "^1.0.1",
+    "ant-design-vue": "^2.1.2",
+    "tailwindcss": "^2.0.4",
+    "vue": "^3.0.5",
+    "vue-router": "^4.0.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "@typescript-eslint/parser": "^4.20.0",
+    "@vitejs/plugin-vue": "^1.2.1",
+    "@vue/compiler-sfc": "^3.0.5",
+    "autoprefixer": "^10.2.5",
+    "eslint": "^7.23.0",
+    "eslint-plugin-vue": "^7.8.0",
+    "ncp": "^2.0.0",
+    "postcss": "^8.2.9",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "typescript": "^4.1.3",
+    "vite": "^2.1.5",
+    "vue-tsc": "^0.0.15"
+  }
+}

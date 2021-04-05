@@ -1,0 +1,34 @@
+{
+  "appName": "地图API二次开发集成测试系统",
+  "routerConfig": {
+    "defaultRouteName": "/openlayers",
+    "routes": [
+      {
+        "name": "Openlayers",
+        "path": "/openlayers"
+      }, {
+        "name": "ArcGIS JS API",
+        "path": "/arcgisjsapi"
+      }, {
+        "name": "ArcGIS JS API 3D",
+        "path": "/arcgisjsapi3d"
+      }, {
+        "name": "Cesium",
+        "path": "/cesium"
+      }, {
+        "name": "About",
+        "path": "/"
+      }
+    ]
+  },
+  "webMapConfig": {
+    "ol": {
+      "webMapOptions": {
+
+      },
+      "basemapOptions": {
+
+      }
+    }
+  }
+}
