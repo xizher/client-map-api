@@ -8,27 +8,22 @@
         />
       </a-col>
       <a-col flex="350px">
-        col-12
+        <div v-if="loaded">
+          <BasemapControl :use-basemap="useBasemap" />
+        </div>
       </a-col>
     </a-row>
   </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
-import {
-  WebMap,
-  MapCursor,
-  Basemap,
-} from '@xizher/ol'
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import useWebMap, { initWebMap } from '../hooks/use-map/use-ol-map'
+import BasemapControl from '../components/map/BasemapControl.vue'
+import useOlBasemap from '@xizher/ol/dist/hooks/basemap.hooks'
 
-const webMap = new WebMap('ol-container')
-  .use(new Basemap())
-  .use(new MapCursor())
-
-onMounted(() => {
-  webMap.mount()
-})
+const loaded = initWebMap('ol-container')
+const useBasemap = () => useOlBasemap(useWebMap()[0].basemap)
 
 </script>
 

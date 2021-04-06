@@ -29,6 +29,30 @@
       "basemapOptions": {
 
       }
+    },
+    "cesium": {
+      "webMapOptions": {
+        "baseUrl": "/cesium/v1.79.1/Build/Cesium/"
+      },
+      "basemapOptions": {
+
+      }
+    },
+    "arcgisjsapi": {
+      "webMapOptions": {
+        
+      },
+      "basemapOptions": {
+
+      }
+    },
+    "arcgisjsapi3d": {
+      "webMapOptions": {
+        
+      },
+      "basemapOptions": {
+
+      }
     }
   }
 }

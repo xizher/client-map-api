@@ -1,5 +1,5 @@
 import { onMounted, onUnmounted, Ref, ref } from 'vue'
-import { WebMap, Basemap, MapCursor } from '@xizher/ol'
+import { WebMap, Basemap, MapCursor } from '@xizher/cesium'
 import useConfig from '../use-config'
 
 let webMap: WebMap | null = null
@@ -8,7 +8,7 @@ const loaded = ref(false)
 export function initWebMap (id: string) : Ref<boolean> {
   loaded.value = false
   const [config] = useConfig()
-  const olConfig = config.webMapConfig.ol
+  const olConfig = config.webMapConfig.cesium
   webMap = new WebMap(id, olConfig.webMapOptions)
     .use(new Basemap(olConfig.basemapOptions))
     .use(new MapCursor())

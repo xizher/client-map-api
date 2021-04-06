@@ -1,27 +1,30 @@
 <template>
-  <div
-    id="cesium-container"
-    class="h-full"
-  />
+  <div class="h-full">
+    <a-row class="h-full">
+      <a-col flex="auto">
+        <div
+          id="cesium-container"
+          class="h-full"
+        />
+      </a-col>
+      <a-col flex="350px">
+        <div v-if="loaded">
+          <BasemapControl :use-basemap="useBasemap" />
+        </div>
+      </a-col>
+    </a-row>
+  </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
-import {
-  WebMap,
-  MapCursor,
-  Basemap,
-} from '@xizher/cesium'
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import useWebMap, { initWebMap } from '../hooks/use-map/use-cesium-map'
+import BasemapControl from '../components/map/BasemapControl.vue'
+import useCesiumBasemap from '@xizher/cesium/dist/hooks/basemap.hooks'
 
-const webMap = new WebMap('cesium-container', {
-  baseUrl: '/cesium/v1.79.1/Build/Cesium/'
-})
-  .use(new Basemap())
-  .use(new MapCursor())
+const loaded = initWebMap('cesium-container')
+const useBasemap = () => useCesiumBasemap(useWebMap()[0].basemap)
 
-onMounted(() => {
-  webMap.mount()
-})
 </script>
 
 <style scoped>
