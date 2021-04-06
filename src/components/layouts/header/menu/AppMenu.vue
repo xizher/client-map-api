@@ -21,7 +21,6 @@ import { computed } from 'vue'
 import useMenu from '../../../../hooks/use-menu'
 
 const [selectedKey, menuItems] = useMenu()
-window.selectedKey = selectedKey
 const selectedKeys = computed(() => [selectedKey.value])
 function changeSelectedKey (item) {
   selectedKey.value = item.key

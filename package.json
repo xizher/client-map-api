@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
     "copy": "npx ncp ./node_modules/@arcgis/core/assets ./public/assets",
     "serve": "vite preview"
   },
@@ -33,7 +33,6 @@
     "sass": "^1.32.8",
     "sass-loader": "^11.0.1",
     "typescript": "^4.1.3",
-    "vite": "^2.1.5",
-    "vue-tsc": "^0.0.15"
+    "vite": "^2.1.5"
   }
 }

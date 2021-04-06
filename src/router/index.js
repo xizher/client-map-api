@@ -1,10 +1,11 @@
-import { createMemoryHistory, createRouter, RouteRecordRaw, Router } from 'vue-router'
+import { createMemoryHistory, createRouter } from 'vue-router'
 import useConfig from '../hooks/use-config'
 import $ext from '@xizher/js-ext'
 
-export default function () : Router {
+export default function () {
   const [config] = useConfig()
-  const routes : RouteRecordRaw[] = config.routerConfig.routes.map(
+  /** @type { import('vue-router').RouteRecordRaw[] } } */
+  const routes = config.routerConfig.routes.map(
     item => ({
       name: item.name,
       path: item.path,

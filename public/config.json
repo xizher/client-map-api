@@ -49,14 +49,6 @@
 
       }
     },
-    "arcgisjsapi3d": {
-      "webMapOptions": {
-        
-      },
-      "basemapOptions": {
-
-      }
-    },
     "leaflet": {
       "webMapOptions": {
         

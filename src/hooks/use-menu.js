@@ -1,12 +1,8 @@
-import { computed, ComputedRef, Ref, ref, watch } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { useRouter } from 'vue-router'
-import useConfig, { IRoute } from './use-config'
+import useConfig from './use-config'
 
-export interface IMenuItem extends IRoute {
-  key: string
-}
-
-export function useSelectedKey () : Ref<string> {
+export function useSelectedKey () {
   const [config, loaded] = useConfig()
   const selectedPath = ref('')
   const router = useRouter()
@@ -23,7 +19,7 @@ export function useSelectedKey () : Ref<string> {
   return selectedPath
 }
 
-export function useMenuItems () : ComputedRef<IMenuItem[]> {
+export function useMenuItems () {
   const [config, loaded] = useConfig()
   const menuItems = computed(() => {
     if (loaded.value) {
@@ -37,7 +33,7 @@ export function useMenuItems () : ComputedRef<IMenuItem[]> {
   return menuItems
 }
 
-function useMenu () : [Ref<string>, ComputedRef<IMenuItem[]>] {
+function useMenu () {
   const selectedKey = useSelectedKey()
   const menuItems = useMenuItems()
   return [selectedKey, menuItems]

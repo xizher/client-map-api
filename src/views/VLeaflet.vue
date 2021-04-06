@@ -16,8 +16,8 @@
   </div>
 </template>
 
-<script setup lang="ts">
-/* eslint-disable @typescript-eslint/no-unused-vars */
+<script setup>
+/* eslint-disable no-unused-vars */
 import useWebMap, { initWebMap } from '../hooks/use-map/use-leaflet-map'
 import BasemapControl from '../components/map/BasemapControl.vue'
 import useOlBasemap from '@xizher/leaflet/dist/hooks/basemap.hooks'

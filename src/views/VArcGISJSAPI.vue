@@ -16,8 +16,8 @@
   </div>
 </template>
 
-<script setup lang="ts">
-/* eslint-disable @typescript-eslint/no-unused-vars */
+<script setup>
+/* eslint-disable no-unused-vars */
 import useWebMap, { initWebMap } from '../hooks/use-map/use-esri-map'
 import BasemapControl from '../components/map/BasemapControl.vue'
 import useEsriBasemap from '@xizher/esri/dist/hooks/basemap.hooks'

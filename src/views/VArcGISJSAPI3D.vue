@@ -3,7 +3,7 @@
     <a-row class="h-full">
       <a-col flex="auto">
         <div
-          id="esri-container"
+          id="esri3d-container"
           class="h-full"
         />
       </a-col>
@@ -16,13 +16,13 @@
   </div>
 </template>
 
-<script setup lang="ts">
-/* eslint-disable @typescript-eslint/no-unused-vars */
+<script setup>
+/* eslint-disable no-unused-vars */
 import useWebMap, { initWebMap } from '../hooks/use-map/use-esri-map'
 import BasemapControl from '../components/map/BasemapControl.vue'
 import useEsriBasemap from '@xizher/esri/dist/hooks/basemap.hooks'
 
-const loaded = initWebMap('esri-container', '3d')
+const loaded = initWebMap('esri3d-container', '3d')
 const useBasemap = () => useEsriBasemap(useWebMap()[0].basemap)
 
 </script>

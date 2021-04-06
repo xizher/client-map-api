@@ -1,6 +1,6 @@
 module.exports = {
   'root': true,
-  parser: 'vue-eslint-parser',
+  // parser: 'vue-eslint-parser',
   'env': {
     'browser': true,
     'commonjs': true,
@@ -10,10 +10,10 @@ module.exports = {
     'eslint:recommended',
     'plugin:vue/vue3-recommended',
     'plugin:vue/base', // to fix "Parsing error: Unexpected token <"
-    'plugin:@typescript-eslint/recommended',
+    // 'plugin:@typescript-eslint/recommended',
   ],
   'parserOptions': {
-    parser: '@typescript-eslint/parser',
+    // parser: '@typescript-eslint/parser',
     'ecmaVersion': 12,
     'sourceType': 'module',
     'ecmaFeature': {
@@ -28,13 +28,6 @@ module.exports = {
     'esri': 'readonly'
   },
   'rules': {
-
-    // TO FIX -> ESLint: Cannot read property 'loc' of undefined.
-    'indent': 'off',
-    '@typescript-eslint/indent': ['error', 2, {
-      'SwitchCase': 1
-    }],
-    // --END
 
     // 行末不用分号
     'semi':

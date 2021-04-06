@@ -2,7 +2,7 @@
   <AppLayout />
 </template>
 
-<script setup lang="ts">
+<script setup>
 /* eslint-disable no-unused-vars */
 import AppLayout from './components/layouts/AppLayout.vue'
 
