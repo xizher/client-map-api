@@ -16,6 +16,9 @@
         "name": "Cesium",
         "path": "/cesium"
       }, {
+        "name": "Leaflet",
+        "path": "/leaflet"
+      }, {
         "name": "About",
         "path": "/"
       }
@@ -47,6 +50,14 @@
       }
     },
     "arcgisjsapi3d": {
+      "webMapOptions": {
+        
+      },
+      "basemapOptions": {
+
+      }
+    },
+    "leaflet": {
       "webMapOptions": {
         
       },

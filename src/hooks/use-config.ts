@@ -5,6 +5,7 @@ import { baseUtils } from '@xizher/js-utils'
 import * as ol from '@xizher/ol'
 import * as cesium from '@xizher/cesium'
 import * as esri from '@xizher/esri'
+import * as leaflet from '@xizher/leaflet'
 
 export interface IRoute {
   name: string
@@ -33,6 +34,10 @@ export interface IConfig {
     arcgisjsapi3d: {
       webMapOptions: esri.IWebMapOptions
       basemapOptions: esri.IBasemapOptions
+    }
+    leaflet: {
+      webMapOptions: leaflet.IWebMapOptions
+      basemapOptions: leaflet.IBasemapOptions
     }
   }
 }

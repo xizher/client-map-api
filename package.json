@@ -13,6 +13,7 @@
     "@xizher/fetch-helper": "^1.0.4",
     "@xizher/js-ext": "^1.0.0",
     "@xizher/js-utils": "^1.0.0",
+    "@xizher/leaflet": "^1.0.2",
     "@xizher/ol": "^1.0.1",
     "ant-design-vue": "^2.1.2",
     "tailwindcss": "^2.0.4",
