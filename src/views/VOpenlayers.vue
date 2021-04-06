@@ -18,8 +18,8 @@
 
 <script setup>
 /* eslint-disable no-unused-vars */
-import useWebMap, { initWebMap } from '../hooks/use-map/use-ol-map'
-import BasemapControl from '../components/map/BasemapControl.vue'
+import useWebMap, { initWebMap } from '@hooks/use-map/use-ol-map'
+import BasemapControl from '@cp/map/BasemapControl.vue'
 import useOlBasemap from '@xizher/ol/dist/hooks/basemap.hooks'
 
 const loaded = initWebMap('ol-container')

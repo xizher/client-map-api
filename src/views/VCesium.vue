@@ -18,8 +18,8 @@
 
 <script setup>
 /* eslint-disable no-unused-vars */
-import useWebMap, { initWebMap } from '../hooks/use-map/use-cesium-map'
-import BasemapControl from '../components/map/BasemapControl.vue'
+import useWebMap, { initWebMap } from '@hooks/use-map/use-cesium-map'
+import BasemapControl from '@cp/map/BasemapControl.vue'
 import useCesiumBasemap from '@xizher/cesium/dist/hooks/basemap.hooks'
 
 const loaded = initWebMap('cesium-container')
