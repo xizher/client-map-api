@@ -15,8 +15,8 @@
   </a-menu>
 </template>
 
-<script setup lang="ts">
-/* eslint-disable @typescript-eslint/no-unused-vars */
+<script setup>
+/* eslint-disable no-unused-vars */
 import { computed } from 'vue'
 import useMenu from '../../../../hooks/use-menu'
 

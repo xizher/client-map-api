@@ -4,8 +4,8 @@
   </div>
 </template>
 
-<script setup lang="ts">
-/* eslint-disable @typescript-eslint/no-unused-vars */
+<script setup>
+/* eslint-disable no-unused-vars */
 import useConfig from '../../../../hooks/use-config'
 const [config] = useConfig()
 </script>

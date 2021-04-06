@@ -8,11 +8,12 @@
   </a-card>
 </template>
 
-<script setup lang="ts">
+<script setup>
+/* eslint-disable no-unused-vars */
 import { defineProps } from 'vue'
-defineProps<{
-  title: string
-}>()
+defineProps({
+  title: { type: String, default: '' }
+})
 </script>
 
 <style scoped>

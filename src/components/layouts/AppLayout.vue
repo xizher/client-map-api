@@ -5,8 +5,8 @@
   </a-layout>
 </template>
 
-<script lang="ts" setup>
-/* eslint-disable */
+<script setup>
+/* eslint-disable no-unused-vars */
 import AppHeader from './header/AppHeader.vue'
 import AppContent from './content/AppContent.vue'
 

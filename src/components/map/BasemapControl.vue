@@ -21,18 +21,16 @@
   </BasePanel>
 </template>
 
-<script setup lang="ts">
-/* eslint-disable @typescript-eslint/no-unused-vars */
+<script setup>
+/* eslint-disable no-unused-vars */
 import { defineProps } from 'vue'
 import BasePanel from '../base/BasePanel.vue'
-const {
-  useBasemap
-} = defineProps<{
-  useBasemap: () => void
-}>()
+const props = defineProps({
+  useBasemap: Function
+})
 const [
   key, visible, list
-] = useBasemap()
+] = props.useBasemap()
 </script>
 
 <style scoped>

@@ -5,8 +5,8 @@
   </a-layout-header>
 </template>
 
-<script setup lang="ts">
-/* eslint-disable @typescript-eslint/no-unused-vars */
+<script setup>
+/* eslint-disable no-unused-vars */
 import AppMenu from './menu/AppMenu.vue'
 import AppTitle from './title/AppTitle.vue'
 </script>
